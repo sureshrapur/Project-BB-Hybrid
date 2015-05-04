@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Project BB Hybrid",
+  "ProjectGuid": "96501abe-47fc-4b88-b7b0-91f4e5e7eebb",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ProjectBBHybrid",
+  "DisplayName": "Project BB Hybrid",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{30abc99a-d498-42bf-989f-85bdb33ae4b1}",
+  "WP8ProductID": "{eef02104-a040-44a9-94f8-66d729a307a8}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ProjectBBHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
