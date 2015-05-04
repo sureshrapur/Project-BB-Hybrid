@@ -43,7 +43,22 @@
       "name": "activationView",
       "title": "Activation",
       "addToNavigation": false,
-      "components": []
+      "components": [
+        {
+          "type": "form",
+          "name": "activationViewModel",
+          "components": [
+            {
+              "type": "field",
+              "name": "activationCode",
+              "title": "Activation Code",
+              "inputType": "text",
+              "placeholder": "000000"
+            }
+          ],
+          "submitButton": "Activate Now"
+        }
+      ]
     },
     {
       "type": "view",

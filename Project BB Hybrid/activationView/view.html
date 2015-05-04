@@ -1,2 +1,17 @@
 <div data-role="view" data-title="Activation" data-layout="main-nonav" data-model="app.activationView" data-show="app.activationView.onShow">
+    <div id="activationViewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Activation Code
+                        <input data-bind="value: activationViewModel.fields.activationCode" placeholder="000000" type="text">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a class="km-state-active" data-role="button" data-bind="events: { click: activationViewModel.submit }">Activate Now</a>
+            </div>
+        </form>
+    </div>
 </div>
