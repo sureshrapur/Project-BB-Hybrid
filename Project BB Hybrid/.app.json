@@ -1,4 +1,39 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "views": [
+    {
+      "type": "view",
+      "name": "home",
+      "title": "Splash",
+      "addToNavigation": false,
+      "components": []
+    },
+    {
+      "type": "view",
+      "name": "registrationView",
+      "title": "Registration",
+      "addToNavigation": false,
+      "components": []
+    },
+    {
+      "type": "view",
+      "name": "activationView",
+      "title": "Activation",
+      "addToNavigation": false,
+      "components": []
+    },
+    {
+      "type": "view",
+      "name": "profileView",
+      "title": "Profile",
+      "addToNavigation": false,
+      "components": []
+    }
+  ],
+  "view": "home",
+  "skin": "flat",
+  "dataProviders": [],
+  "transition": "zoom"
 }
