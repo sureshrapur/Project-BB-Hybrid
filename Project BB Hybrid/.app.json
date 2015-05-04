@@ -15,7 +15,28 @@
       "name": "registrationView",
       "title": "Registration",
       "addToNavigation": false,
-      "components": []
+      "components": [
+        {
+          "type": "form",
+          "name": "registrationViewModel",
+          "components": [
+            {
+              "type": "field",
+              "name": "dropdownlist",
+              "title": "Country",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "tel",
+              "title": "Phone",
+              "inputType": "tel",
+              "placeholder": "+123 444 555 666"
+            }
+          ],
+          "submitButton": "Request Activation Code"
+        }
+      ]
     },
     {
       "type": "view",
