@@ -1,10 +1,8 @@
 'use strict';
 
 app.registrationView = kendo.observable({
-    onShow:function(){}
+    onShow: function() {}
 });
-
-
 (function(parent) {
     var registrationViewModel = kendo.observable({
         fields: {
@@ -12,14 +10,8 @@ app.registrationView = kendo.observable({
             tel: '',
             dropdownlist: '',
         },
-        submit: function() {
-            alert('On Submit');
-            app.navigate('../activationView/view.html');
-        
-        }
+        submit: function() {}
     });
 
     parent.set('registrationViewModel', registrationViewModel);
 })(app.registrationView);
-
-

@@ -15,7 +15,7 @@
                 // and feel of the operating system
                 skin: 'flat',
                 // the application needs to know which view to load first
-                initial: 'registrationView/view.html',
+                initial: 'home/view.html',
                 statusBarStyle: 'black-translucent'
             });
         });
@@ -29,9 +29,6 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
-            
-           
-            
 
             bootstrap();
         }, false);

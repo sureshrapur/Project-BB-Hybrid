@@ -14,7 +14,7 @@
       "type": "view",
       "name": "registrationView",
       "title": "Registration",
-      "addToNavigation": false,
+      "addToNavigation": true,
       "components": [
         {
           "type": "form",
@@ -43,7 +43,8 @@
           ],
           "submitButton": "Request Activation Code"
         }
-      ]
+      ],
+      "icon": "phone"
     },
     {
       "type": "view",
@@ -71,8 +72,9 @@
       "type": "view",
       "name": "profileView",
       "title": "Profile",
-      "addToNavigation": false,
-      "components": []
+      "addToNavigation": true,
+      "components": [],
+      "icon": "info"
     }
   ],
   "view": "home",
