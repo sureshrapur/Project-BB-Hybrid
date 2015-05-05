@@ -3,32 +3,83 @@
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
-                    <label>Country
-                        <select data-bind="value: registrationViewModel.fields.dropdownlist" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
-                            <option value="Fourth Option">Fourth Option</option>
-                            <option value="First Option">Fifth Option</option>
-                            <option value="Sixth Option">Sixth Option</option>
-                        </select>
-                    </label>
-                </li>
-                <li>
-                    <label>Phone
-                        <input data-bind="value: registrationViewModel.fields.tel" placeholder="+123 444 555 666" type="tel">
-                    </label>
-                </li>
-                <li>
-                    <label>Phone
-                        <input data-bind="value: registrationViewModel.fields.tel1" placeholder="+123 444 555 666" type="tel">
+                    <label>Mobile Phone
+                        <!--<input id="phone" >-->
+                        <input id="phone" data-bind="value: registrationViewModel.fields.tel" type="tel">
+                        <span id="valid-msg1" class="hide">✓ Valid</span>
+                        <span id="error-msg1" class="hide">Invalid number</span>
                     </label>
                 </li>
             </ul>
-
+            <div>
+                <p align="Center" font="Roboto">
+                    You will receive a activation code in a very short period of time.
+                </p>
+            </div>
             <div class="button-group">
                 <a class="km-state-active" data-role="button" data-bind="events: { click: registrationViewModel.submit }">Request Activation Code</a>
             </div>
         </form>
+        <!--
+        <script src="intl-tel-input-master/build/js/intlTelInput.js"></script>
+        <script>
+            
+            var telInput = $("#phone"),
+                errorMsg = $("#error-msg1"),
+                validMsg = $("#valid-msg1");
+
+            
+            //$("#phone").intlTelInput({
+                //allowExtensions: true,
+                //autoFormat: false,
+                //autoHideDialCode: false,
+                //autoPlaceholder: false,
+                //defaultCountry: "auto",
+                //ipinfoToken: "yolo",
+                //nationalMode: false,
+                //numberType: "MOBILE",
+                //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                //preferredCountries: ['cn', 'jp'],
+                //utilsScript: "intl-tel-input-master/lib/libphonenumber/build/utils.js"
+            //});
+
+
+
+            // initialise plugin
+            telInput.intlTelInput({
+                //allowExtensions: true,
+                //autoFormat: false,
+                //autoHideDialCode: false,
+                //autoPlaceholder: false,
+                defaultCountry: "auto",
+                //ipinfoToken: "yolo",
+                //nationalMode: false,
+                numberType: "MOBILE",
+                //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                //preferredCountries: ['cn', 'jp'],
+                utilsScript: "intl-tel-input-master/lib/libphonenumber/build/utils.js"
+            });
+
+            // on blur: validate
+            telInput.blur(function () {
+                if ($.trim(telInput.val())) {
+                    if (telInput.intlTelInput("isValidNumber")) {
+                        validMsg.removeClass("hide");
+                    } else {
+                        telInput.addClass("error");
+                        errorMsg.removeClass("hide");
+                        validMsg.addClass("hide");
+                    }
+                }
+            });
+
+            // on keydown: reset
+            telInput.keydown(function () {
+                telInput.removeClass("error");
+                errorMsg.addClass("hide");
+                validMsg.addClass("hide");
+            });
+        </script>
+-->
     </div>
 </div>
