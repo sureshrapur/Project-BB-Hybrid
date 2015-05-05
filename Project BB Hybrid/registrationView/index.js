@@ -6,6 +6,7 @@ app.registrationView = kendo.observable({
 (function(parent) {
     var registrationViewModel = kendo.observable({
         fields: {
+            tel1: '',
             tel: '',
             dropdownlist: '',
         },
